@@ -11,8 +11,8 @@ Code for named entity recognition (NER) on **Chinese atrial fibrillation (AF) el
 ## Models & key hyperparameters
 
 The two generative models are fine-tuned with **different** parameter-efficient
-methods, so their learning rates differ by design — each uses the rate
-recommended for its own method. This is intentional, not an inconsistency.
+methods (LoRA for Qwen3-8B, P-Tuning v2 for ChatGLM3-6B), so their learning
+rates differ by design — each uses the rate recommended for its own method.
 
 | Model | Method | Learning rate | Key settings |
 |-------|--------|--------------:|--------------|

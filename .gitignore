@@ -1,0 +1,40 @@
+# --- Data: never commit raw clinical records or derived datasets ---
+*.ann
+inference_results.json
+data/
+**/jsondata/
+**/conlldata/
+**/resultdata/
+doccano*.json
+# JSON files are data by default in this project; code lives in .py / .ipynb
+*.json
+!.vscode/*.json
+
+# --- Models / checkpoints / logs ---
+output/
+checkpoint-*/
+*.bin
+*.safetensors
+swanlog/
+runs/
+
+# --- Archives & documents ---
+*.zip
+*.docx
+*.doc
+*.pdf
+*.xlsx
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

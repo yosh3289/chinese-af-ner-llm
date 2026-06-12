@@ -50,7 +50,7 @@ Each sample is a chat-style record; the `assistant` content is the gold entity J
 {
   "conversations": [
     {"role": "system",    "content": "<task instruction listing the 5 entity types>"},
-    {"role": "user",      "content": "<one EMR sentence>"},
+    {"role": "user",      "content": "句子：<one EMR sentence>\n请按以下 JSON 模式输出：{...}"},
     {"role": "assistant", "content": "{\"身体部位\": [...], \"症状体征\": [...], ...}"}
   ]
 }

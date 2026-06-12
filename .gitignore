@@ -9,7 +9,8 @@ doccano*.json
 # JSON files are data by default in this project; code lives in .py / .ipynb
 *.json
 !.vscode/*.json
-!examples/sample.json   # synthetic illustrative example (no real patient data)
+# synthetic illustrative example (no real patient data):
+!examples/sample.json
 
 # --- Models / checkpoints / logs ---
 output/

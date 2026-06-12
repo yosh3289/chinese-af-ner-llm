@@ -6,7 +6,7 @@ Code for named entity recognition (NER) on **Chinese atrial fibrillation (AF) el
 
 ## Entity categories
 
-身体部位 (Body) · 症状表现 (Symptom) · 检查检验 (Check) · 治疗方式 (Treat) · 疾病及诊断 (Disease)
+身体部位 (Body) · 症状体征 (Symptoms & Signs) · 检验检查 (Examinations & Tests) · 治疗方式 (Treatment) · 疾病和诊断 (Disease & Diagnosis)
 
 ## Models & key hyperparameters
 
@@ -51,7 +51,7 @@ Each sample is a chat-style record; the `assistant` content is the gold entity J
   "conversations": [
     {"role": "system",    "content": "<task instruction listing the 5 entity types>"},
     {"role": "user",      "content": "<one EMR sentence>"},
-    {"role": "assistant", "content": "{\"身体部位\": [...], \"症状表现\": [...], ...}"}
+    {"role": "assistant", "content": "{\"身体部位\": [...], \"症状体征\": [...], ...}"}
   ]
 }
 ```

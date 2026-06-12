@@ -56,6 +56,10 @@ Each sample is a chat-style record; the `assistant` content is the gold entity J
 }
 ```
 
+See [`examples/sample.json`](examples/sample.json) for a complete worked example.
+It is a **synthetic, illustrative** record (a constructed sentence) — **not real
+patient data** — showing the system prompt, input, gold labels, and model output.
+
 ## Requirements
 
 Python 3.10+. Main dependencies: `torch`, `transformers`, `peft`, `datasets`,
